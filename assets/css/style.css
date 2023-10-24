@@ -370,7 +370,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     text-transform: capitalize;
 }
 
-.project-photo{margin-top: 40px;position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.project-photo{margin-bottom: 20px;width: auto; max-height: 100%; margin-top: 40px;position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
 
 
 
