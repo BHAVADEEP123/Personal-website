@@ -99,7 +99,54 @@
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>Hey<span>,</span> i'm <br> Bhavadeep Bhukya  </h2><br>
+							<h2>Hey<span>,</span> i'm <br>  </h2><br>
+							<h2 class="auto-type1"></h2>
+							<!-- animating text -->
+							<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+							<script>
+								var typeit = setTimeout(function(){
+									new Typed(".auto-type1",{
+									strings : ['Bhavadeep Bhukya'],
+									typeSpeed : 100,
+								})
+							},1000)
+							</script>
+							<h2 id="auto-type2" ></h2>
+							<h2><span id="auto-type3"></span></h2>
+							<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+							<script>
+							  setTimeout(function(){
+								new TypeIt("#auto-type2", {
+								speed: 150,
+								afterComplete: function(instance) {
+									instance.destroy();
+								}
+							  })
+							  .type("adn Im a",{delay:100})
+							  .move(null,{to: "START", instant: true, delay: 150 })
+							  .move(3,{delay:100})
+							  .delete(2,{delay:100})
+							  .type("nd",{delay:100})
+							  .move(2,{delay:250})
+							  .type("'",{delay:100})
+							  .move(4,{delay:100})
+							  .type(' ',{delay:100})
+							  .go();
+							  },4000);
+							  
+							</script>
+							<script>
+								var typeit = setTimeout(function(){
+									new Typed("#auto-type3",{
+									strings : ['coder','editor','photographer'],
+									typeSpeed : 100,
+									backSpeed : 50,
+									loop : true
+								})
+							},9000);
+							</script>
+							
+							
 							<a href="assets/download/Resumes.pdf" download>download resume</a>
 							
 						</div><!--/.header-text-->
