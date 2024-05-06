@@ -25,6 +25,7 @@ font-family: 'Poppins', sans-serif;
 /*-------------------------------------
 		1.General css (Reset code)
 --------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -353,6 +354,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     text-transform: initial;
     line-height: 1.8;
     margin-bottom: 20px;
+    align-items: center;
 }
 .project-about-txt p {
     font-size: 16px;
@@ -432,6 +434,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-bottom: 50px;
     border-bottom: 1px solid #e5ebf2;
 }
+
+.section-side-heading h2{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #d92cf9;
+}
+
 .single-progress-txt {
     display: flex;
 }
