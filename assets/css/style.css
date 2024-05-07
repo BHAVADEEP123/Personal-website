@@ -26,6 +26,7 @@ font-family: 'Poppins', sans-serif;
 		1.General css (Reset code)
 --------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -915,3 +916,73 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     100%  {bottom:7px;}
 }
 /*========================Thank you=================
+
+
+/* Blogs part */
+
+.blogs-main-heading{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 33px 0px 30px;
+
+}
+
+.blogs-banner{
+    padding-top: 84px;
+    position: relative;
+    /* position: absolute; */
+    /* background-image: url('/assets/images/blogs/BHAVADEEP.png'); */
+}
+
+.blogs-banner img{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+    z-index: 0;
+}
+
+.blogs-banner h2{
+    padding-top: 200px;
+    position: absolute;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    color:black;
+    z-index: 3;
+    padding-left: 30px;
+    opacity: 1;  /* Make the text visible initially */
+    animation: revealText 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes revealText {
+    from {
+        transform: translateY(30%);  /* Start from below the container */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);  /* Move to its final position */
+        opacity: 1;  /* Make the text fully visible */
+    }
+}
+
+@media (max-width: 1024px){
+    .blogs-banner{
+        padding-top: 85px;
+    }
+    .blogs-banner img{
+        width: 100%;
+        height: auto;
+    }
+    .blogs-main-heading{
+        display: none;
+    }
+    .blogs-banner h2{
+        font-size: 20px;
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+}
